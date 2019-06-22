@@ -4,9 +4,19 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
-    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    transform: scale(0.8);
 }
+
+.cabeza {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .cara {
     background-color: #fbe9da;
     width: 300px;
@@ -21,10 +31,10 @@ main {
 .gorro {
     background-color: #ffffff;
     width: 450px;
-    height: 330px;
+    height: 290px;
     border-top-right-radius: 39%;
     border-top-left-radius: 39%;
-   
+
     position: relative;
 }
 
@@ -34,13 +44,11 @@ main {
     height: 200px;
     border-top-left-radius: 39%;
     border-top-right-radius: 39%;
-    position: absolute;
-    top: 20%;
-    left: 21.1%;
+    transform: translate(200%, -19.9%);
 }
 
 .gorro-puntas:nth-of-type(2) {
-    left: 69.9%;
+    transform: translate(643%, -19.9%);
 }
 
 .ojos {
@@ -60,3 +68,83 @@ main {
     transform: translate(83px, 54px);
 
 }
+
+.gorro-bottom {
+    border-bottom: 50px solid #ffffff;
+    width: 450px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-75px, 106px);
+}
+
+.cuerpo {
+    background-color: #01BDEF;
+    width: 450px;
+    height: 400px;
+    transform: translateX(70px);
+    z-index: -1;
+}
+
+.mochila {
+    background-color: #28ae00;
+    width: 58px;
+    height: 150px;
+    border-radius: 35%;
+    float: left;
+    position: absolute;
+}
+
+.mochila:nth-of-type(1) {
+    transform: translate(-47px, -35px);
+}
+
+.mochila:nth-of-type(2) {
+    transform: translate(444px, -35px);
+}
+
+.manga {
+    background-color: #01BDEF;
+    width: 60px;
+    height: 200px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -1;
+}
+
+.izquierda {
+    transform: rotate(44deg);
+    top: -29px;
+    left: -100px;
+}
+
+.derecha {
+    transform: rotate(-33deg);
+    top: -29px;
+    left: 481px;
+}
+
+.brazoderecho {
+    background-color: #fbe9da;
+    width: 60px;
+    height: 350px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -2;
+    top: 55px;
+    left:  584px;
+    transform: rotate(-33deg);
+}
+
+.brazoizquierdo {
+    background-color: #fbe9da;
+    width: 60px;
+    height: 350px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: -2;
+    top: 55px;
+    left: -257px;
+    transform: rotate(45deg);
+}
+
+
